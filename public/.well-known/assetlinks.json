@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.khatta.ledger",
+        "sha256_cert_fingerprints": ["84:9D:18:F5:CD:31:9F:94:C2:ED:78:7C:E2:8C:15:BB:02:40:C0:C2:AA:5A:E8:09:CE:52:B8:D0:C2:DB:E3:09"]
+      }
+    }]

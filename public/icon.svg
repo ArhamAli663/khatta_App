@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#064e3b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle pattern -->
+  <circle cx="100" cy="80" r="140" fill="#ffffff" opacity="0.06"/>
+  <circle cx="420" cy="440" r="160" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Ledger Book -->
+  <g filter="url(#shadow)">
+    <!-- Book Cover Background -->
+    <rect x="110" y="96" width="292" height="320" rx="20" fill="url(#bookGrad)"/>
+    <!-- Book Spine -->
+    <path d="M110 116 C110 105 119 96 130 96 L154 96 L154 416 L130 416 C119 416 110 407 110 396 Z" fill="#047857"/>
+    <!-- Bookmark ribbon -->
+    <path d="M310 96 L310 190 L330 170 L350 190 L350 96 Z" fill="#ef4444"/>
+    <!-- Ledger Lines -->
+    <line x1="180" y1="160" x2="280" y2="160" stroke="#059669" stroke-width="8" stroke-linecap="round"/>
+    <line x1="180" y1="200" x2="330" y2="200" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+    <line x1="180" y1="240" x2="330" y2="240" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+    <line x1="180" y1="280" x2="270" y2="280" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Big Rupee / Currency Badge -->
+    <circle cx="260" cy="340" r="46" fill="#10b981"/>
+    <text x="260" y="358" font-family="system-ui, sans-serif" font-weight="900" font-size="44" fill="#ffffff" text-anchor="middle">Rs</text>
+  </g>
+</svg>
